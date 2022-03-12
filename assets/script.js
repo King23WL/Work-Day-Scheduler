@@ -28,6 +28,8 @@ function starter(){
     $(".hour").each(function(){
         var currentHour=$(this).text();
         var currentPlan=localStorage.getItem(currentHour);
+        //console.log(this);
+        //console.log(currentHour);
         if(currentHour!==null){
             $(this).siblings(".plan").val(currentPlan);
         }
